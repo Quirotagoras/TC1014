@@ -1,0 +1,16 @@
+x=int(input("Give me a number"))
+y=int(input("give me another number"))
+
+def suma (x,y):
+    return x + y
+def resta (x,y):
+    return x - y
+def division1 (x,y):
+    return x/y
+def division2 (x,y):
+    return x%y
+
+print("the sum of",x,"and",y,"is",suma(x,y))
+print("the difference of",x,"and",y,"is",resta(x,y))
+print("the division with decimals of",x,"and",y,"is",division1(x,y))
+print("the division of",x,"and",y,"is",division2(x,y))
