@@ -1,0 +1,40 @@
+lower = int(input("Write the first number "))
+upper = int(input("Write the last number  "))
+palindrome = 0
+transformed = 0
+lychrel = 0
+list1=[]
+
+for y in range (lower,upper+1):
+    list1.append(y)
+print (list1)
+
+for y in list1:
+    x = y
+    x = str(x)
+    reverse = x[::-1]
+    if  x == reverse:
+        palindrome += 1
+    else:
+        counter = 0
+        while x != reverse and counter != 30:
+            x = int(x)
+            reverse = int(reverse)
+
+            x = x + reverse
+
+            x = str(x)
+            reverse = x[::-1]
+
+            if x == reverse:
+                transformed += 1
+            counter += 1
+
+        if x != reverse and counter >= 30:
+            print (y+1,"Lychrel")
+            lychrel += 1
+
+print ("Range size:",len(list1))
+print ("Natural palindromes: ",palindrome)
+print ("Become palindromes: ",transformed)
+print ("Lychrel candidates: ", lychrel)
