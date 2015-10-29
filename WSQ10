@@ -1,0 +1,23 @@
+from statistics import*
+def avrg(lista):
+    return sum(lista)/len(lista)
+def dev(lista):
+    return stdev(lista)
+def med (lista):
+    return median(lista)
+
+x=float(input("give me a numer"))
+y=float(input("give me a numer"))
+z=float(input("give me a numer"))
+a=float(input("give me a numer"))
+b=float(input("give me a numer"))
+c=float(input("give me a numer"))
+d=float(input("give me a numer"))
+e=float(input("give me a numer"))
+f=float(input("give me a numer"))
+g=float(input("give me a numer"))
+
+lista = [x,y,z,a,b,c,d,e,f]
+print ("the average of the numbers is", avrg(lista))
+print ("the standard deviation is", dev(lista))
+print(" the median is", median(lista))
