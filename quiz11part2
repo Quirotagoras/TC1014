@@ -1,0 +1,11 @@
+def checkBanana(test):
+    n = 0
+    fil = open(test)
+    read = fil.read()
+    words = read.split()
+    for i in words:
+        if (i == "Banana"):
+            n = n + 1
+    print("Banana found ",n)
+
+checkBanana("test.txt")
