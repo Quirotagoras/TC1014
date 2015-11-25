@@ -1,0 +1,8 @@
+import StringIO
+def rotate(a):
+    image = Image.open(a)
+    image.rotate(50)
+
+a=input("Give me the name of the image you want to rotate")
+rotate(a)
+#####Need the correct library
