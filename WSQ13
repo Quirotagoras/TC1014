@@ -1,0 +1,11 @@
+from math import sqrt
+def squareroot(x):
+     e=0.00001
+     y=1
+     while (x-y>e):
+         x=(x+y)/2
+         return x
+
+z=int(input("Give me the number you want the squareroot"))
+s = squareroot(z)
+print (s)
